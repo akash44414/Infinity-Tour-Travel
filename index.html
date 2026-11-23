@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infinity Tour n Travel | Crafting Smooth Journeys Since 2010</title>
+<meta name="description" content="Infinity Tour n Travel, Ashok Vihar / Wazirpur, New Delhi. Customized domestic & international holiday packages, group tours, family excursions and air ticketing since 2010.">
+<meta name="theme-color" content="#0F172A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { navy: '#0F172A', amber: { DEFAULT: '#F59E0B', dark: '#D97706' }, wa: '#25D366' },
+        fontFamily: { sans: ['Poppins', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: 'Poppins', sans-serif; color: #1e293b; -webkit-tap-highlight-color: transparent; }
+  html { scroll-padding-top: 76px; }
+  .hero-bg { background: linear-gradient(135deg,#0F172A,#1e3a5f); }
+  .img-fallback { background: linear-gradient(135deg,#0F172A,#334155); }
+  .card-lift { transition: transform .3s ease, box-shadow .3s ease; }
+  .card-lift:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -12px rgba(15,23,42,.25); }
+  .card-img { transition: transform .6s ease; }
+  .group:hover .card-img { transform: scale(1.08); }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.show { opacity: 1; transform: none; }
+  .filter-btn.active { background: #F59E0B; color: #0F172A; border-color: #F59E0B; }
+  .pulse-ring { animation: pulse 2s infinite; }
+  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)} 70%{box-shadow:0 0 0 16px rgba(37,211,102,0)} 100%{box-shadow:0 0 0 0 rgba(37,211,102,0)} }
+  .pkg-card.hide { display: none; }
+  .pkg-card.fade-in { animation: fadeIn .5s ease; }
+  @keyframes fadeIn { from{opacity:0;transform:scale(.96)} to{opacity:1;transform:none} }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } .reveal { opacity: 1; transform: none; } }
+</style>
+</head>
+<body class="bg-white antialiased">
+
+<!-- NAVBAR -->
+<header id="nav" class="fixed top-0 inset-x-0 z-50 bg-navy/95 backdrop-blur shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-[68px] flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-2.5">
+      <span class="w-10 h-10 rounded-full bg-amber flex items-center justify-center text-navy text-xl"><i class="fa-solid fa-infinity"></i></span>
+      <span class="leading-tight">
+        <span class="block text-white font-serif font-bold text-lg">Infinity Tour n Travel</span>
+        <span class="block text-amber text-[10px] tracking-widest uppercase">Since 2010</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-7 text-sm text-slate-200">
+      <a href="#home" class="hover:text-amber transition">Home</a>
+      <a href="#packages" class="hover:text-amber transition">Packages</a>
+      <a href="#services" class="hover:text-amber transition">Services</a>
+      <a href="#why" class="hover:text-amber transition">Why Us</a>
+      <a href="#reviews" class="hover:text-amber transition">Reviews</a>
+      <a href="#contact" class="hover:text-amber transition">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#" data-wa="Hello Infinity Tour n Travel! I would like to plan a trip." class="wa-link hidden sm:inline-flex items-center gap-2 bg-wa hover:bg-green-500 text-white font-medium text-sm px-4 py-2 rounded-full transition hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Us
+      </a>
+      <a href="#" data-wa="Hello Infinity Tour n Travel! I would like to plan a trip." class="wa-link sm:hidden w-10 h-10 rounded-full bg-wa text-white flex items-center justify-center" aria-label="WhatsApp Us"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+      <button id="menuBtn" class="lg:hidden w-10 h-10 text-white text-xl" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden bg-navy border-t border-white/10">
+    <div class="px-5 py-3 flex flex-col text-slate-200">
+      <a href="#home" class="mlink py-3 border-b border-white/10">Home</a>
+      <a href="#packages" class="mlink py-3 border-b border-white/10">Packages</a>
+      <a href="#services" class="mlink py-3 border-b border-white/10">Services</a>
+      <a href="#why" class="mlink py-3 border-b border-white/10">Why Us</a>
+      <a href="#reviews" class="mlink py-3 border-b border-white/10">Reviews</a>
+      <a href="#contact" class="mlink py-3">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="relative min-h-[100svh] flex items-center hero-bg pt-[68px]">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80" alt="Tropical beach holiday destination" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high">
+  <div class="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/65 to-navy/90"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 py-16 w-full">
+    <div class="max-w-3xl">
+      <span class="inline-flex items-center gap-2 bg-amber/15 border border-amber/40 text-amber text-xs sm:text-sm font-medium px-4 py-2 rounded-full backdrop-blur">
+        <i class="fa-solid fa-shield-halved"></i> Ashok Vihar's Trusted Travel Partner Since 2010
+      </span>
+      <h1 class="mt-6 font-serif font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.15]">
+        Seamless Family &amp; International Holidays, <span class="text-amber">Tailored For You</span>
+      </h1>
+      <p class="mt-5 text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl">
+        From the forests of Jim Corbett to the beaches of Bali, we plan every detail, flights, stays, sightseeing and on-trip support, so you simply enjoy the journey.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <a href="#packages" class="inline-flex items-center justify-center gap-2 bg-amber hover:bg-amber-dark text-navy font-semibold px-7 py-4 rounded-full transition hover:scale-105 shadow-lg shadow-amber/30">
+          <i class="fa-solid fa-compass"></i> Explore Packages
+        </a>
+        <a href="#" data-wa="Hello Infinity Tour n Travel! I would like to plan a trip. Please guide me." class="wa-link inline-flex items-center justify-center gap-2 bg-wa hover:bg-green-500 text-white font-semibold px-7 py-4 rounded-full transition hover:scale-105 shadow-lg">
+          <i class="fa-brands fa-whatsapp text-xl"></i> Plan Your Trip on WhatsApp
+        </a>
+      </div>
+      <div class="mt-10 flex items-center gap-3 text-slate-300 text-sm">
+        <div class="flex text-amber"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <span>Loved by families &amp; groups across Delhi NCR</span>
+      </div>
+    </div>
+  </div>
+  <a href="#stats" class="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/70 animate-bounce hidden sm:block" aria-label="Scroll down"><i class="fa-solid fa-chevron-down text-xl"></i></a>
+</section>
+
+<!-- TRUST STRIP -->
+<section id="stats" class="bg-navy relative -mt-px">
+  <div class="max-w-7xl mx-auto px-5 sm:px-6 py-10 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+    <div class="reveal text-center"><div class="text-amber text-3xl mb-2"><i class="fa-solid fa-award"></i></div><div class="text-white font-serif text-3xl font-bold">15+</div><div class="text-slate-300 text-sm">Years Legacy</div></div>
+    <div class="reveal text-center"><div class="text-amber text-3xl mb-2"><i class="fa-solid fa-map-location-dot"></i></div><div class="text-white font-serif text-3xl font-bold">100%</div><div class="text-slate-300 text-sm">Customized Itineraries</div></div>
+    <div class="reveal text-center"><div class="text-amber text-3xl mb-2"><i class="fa-solid fa-earth-asia"></i></div><div class="text-white font-serif text-xl sm:text-3xl font-bold">Domestic + Global</div><div class="text-slate-300 text-sm">Destinations</div></div>
+    <div class="reveal text-center"><div class="text-amber text-3xl mb-2"><i class="fa-solid fa-people-group"></i></div><div class="text-white font-serif text-xl sm:text-3xl font-bold">End-to-End</div><div class="text-slate-300 text-sm">Group Coordination</div></div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages" class="py-16 sm:py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-5 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <span class="text-amber font-semibold tracking-widest text-xs uppercase">Featured Tour Packages</span>
+      <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-bold text-navy">Handpicked Holidays, Made Around You</h2>
+      <p class="mt-4 text-slate-600">Every package below is a starting point. We adjust the hotels, days, flights and activities to match your family, budget and travel dates.</p>
+    </div>
+
+    <div class="mt-9 flex gap-2 sm:gap-3 justify-start sm:justify-center overflow-x-auto pb-2 -mx-5 px-5 sm:mx-0 sm:px-0" role="tablist" aria-label="Package categories">
+      <button class="filter-btn active whitespace-nowrap border border-slate-300 bg-white text-navy text-sm font-medium px-5 py-2.5 rounded-full transition hover:border-amber" data-filter="all">All</button>
+      <button class="filter-btn whitespace-nowrap border border-slate-300 bg-white text-navy text-sm font-medium px-5 py-2.5 rounded-full transition hover:border-amber" data-filter="domestic">Domestic</button>
+      <button class="filter-btn whitespace-nowrap border border-slate-300 bg-white text-navy text-sm font-medium px-5 py-2.5 rounded-full transition hover:border-amber" data-filter="international">International</button>
+      <button class="filter-btn whitespace-nowrap border border-slate-300 bg-white text-navy text-sm font-medium px-5 py-2.5 rounded-full transition hover:border-amber" data-filter="group">Group Tours</button>
+    </div>
+
+    <div id="pkgGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+      <!-- 1 -->
+      <article class="pkg-card group card-lift bg-white rounded-2xl overflow-hidden shadow-md flex flex-col" data-cat="domestic">
+        <div class="relative h-56 overflow-hidden img-fallback">
+          <svg class="card-img w-full h-full" viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Jim Corbett jungle safari illustration"><defs><linearGradient id="gC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fcd34d"/><stop offset=".55" stop-color="#fb923c"/><stop offset="1" stop-color="#fde68a"/></linearGradient></defs><rect width="400" height="224" fill="url(#gC)"/><circle cx="290" cy="85" r="34" fill="#fff7ed" opacity=".9"/><path d="M0 130 Q60 90 120 125 T250 115 T400 125 V224 H0Z" fill="#166534" opacity=".7"/><path d="M0 150 Q80 120 160 148 T320 140 T400 150 V224 H0Z" fill="#14532d"/><g fill="#052e16"><rect x="40" y="120" width="6" height="45"/><circle cx="43" cy="112" r="22"/><rect x="110" y="128" width="6" height="40"/><circle cx="113" cy="120" r="19"/><rect x="330" y="118" width="6" height="48"/><circle cx="333" cy="108" r="24"/><rect x="375" y="130" width="5" height="38"/><circle cx="377" cy="123" r="17"/></g><rect y="165" width="400" height="59" fill="#78350f"/><path d="M0 205 H400" stroke="#fcd34d" stroke-width="3" stroke-dasharray="18 12" opacity=".6"/><g><rect x="150" y="160" width="100" height="24" rx="5" fill="#0f172a"/><path d="M165 160 l12 -22 h55 l10 22z" fill="#1e293b"/><rect x="180" y="143" width="20" height="15" fill="#fde68a"/><rect x="206" y="143" width="20" height="15" fill="#fde68a"/><circle cx="175" cy="186" r="11" fill="#020617"/><circle cx="225" cy="186" r="11" fill="#020617"/><circle cx="175" cy="186" r="4" fill="#94a3b8"/><circle cx="225" cy="186" r="4" fill="#94a3b8"/></g></svg>
+          <span class="absolute top-3 left-3 bg-amber text-navy text-xs font-bold px-3 py-1.5 rounded-full"><i class="fa-regular fa-clock mr-1"></i>3N / 4D</span>
+          <span class="absolute top-3 right-3 bg-navy/80 text-white text-xs px-3 py-1.5 rounded-full">Domestic</span>
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-serif text-xl font-bold text-navy">Jim Corbett Wildlife &amp; Family Getaway</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600 flex-1">
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Jeep safari in Corbett National Park</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Riverside resort stay with family activities</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Short drive from Delhi NCR</li>
+          </ul>
+          <a href="#" data-wa-pkg="Jim Corbett Wildlife & Family Getaway (3N/4D)" class="wa-link mt-6 inline-flex items-center justify-center gap-2 bg-wa hover:bg-green-500 text-white font-semibold py-3 rounded-full transition"><i class="fa-brands fa-whatsapp text-lg"></i> Inquire on WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="pkg-card group card-lift bg-white rounded-2xl overflow-hidden shadow-md flex flex-col" data-cat="international">
+        <div class="relative h-56 overflow-hidden img-fallback">
+          <svg class="card-img w-full h-full" viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Sri Lanka beach and tea hills illustration"><defs><linearGradient id="gS" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#fef3c7"/></linearGradient></defs><rect width="400" height="224" fill="url(#gS)"/><circle cx="90" cy="68" r="28" fill="#fef9c3"/><path d="M0 120 Q70 82 140 112 T280 102 T400 116 V140 H0Z" fill="#15803d"/><path d="M0 128 Q90 108 180 126 T400 124" stroke="#166534" stroke-width="3" fill="none" opacity=".6"/><rect y="136" width="400" height="44" fill="#0ea5e9"/><path d="M20 150 q15 -6 30 0 t30 0 M180 160 q15 -6 30 0 t30 0 M290 148 q15 -6 30 0 t30 0" stroke="#e0f2fe" stroke-width="2" fill="none"/><path d="M0 176 Q200 150 400 178 V224 H0Z" fill="#fde68a"/><path d="M310 205 Q325 150 335 98" stroke="#92400e" stroke-width="7" fill="none" stroke-linecap="round"/><g stroke="#166534" stroke-width="5" fill="none" stroke-linecap="round"><path d="M335 98 Q305 78 280 98"/><path d="M335 98 Q320 66 296 70"/><path d="M335 98 Q350 66 376 76"/><path d="M335 98 Q365 80 388 104"/></g><path d="M70 205 Q82 165 90 130" stroke="#92400e" stroke-width="5" fill="none" stroke-linecap="round"/><g stroke="#15803d" stroke-width="4" fill="none" stroke-linecap="round"><path d="M90 130 Q68 114 50 130"/><path d="M90 130 Q80 104 62 106"/><path d="M90 130 Q104 104 122 110"/><path d="M90 130 Q116 116 132 136"/></g></svg>
+          <span class="absolute top-3 left-3 bg-amber text-navy text-xs font-bold px-3 py-1.5 rounded-full"><i class="fa-regular fa-clock mr-1"></i>5N / 6D</span>
+          <span class="absolute top-3 right-3 bg-navy/80 text-white text-xs px-3 py-1.5 rounded-full">International</span>
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-serif text-xl font-bold text-navy">Sri Lanka Cultural &amp; Beach Escape</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600 flex-1">
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Temples, tea hills &amp; heritage sightseeing</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Relaxed beach days on the coast</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Short flight, great for first-time international trips</li>
+          </ul>
+          <a href="#" data-wa-pkg="Sri Lanka Cultural & Beach Escape (5N/6D)" class="wa-link mt-6 inline-flex items-center justify-center gap-2 bg-wa hover:bg-green-500 text-white font-semibold py-3 rounded-full transition"><i class="fa-brands fa-whatsapp text-lg"></i> Inquire on WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="pkg-card group card-lift bg-white rounded-2xl overflow-hidden shadow-md flex flex-col" data-cat="international">
+        <div class="relative h-56 overflow-hidden img-fallback">
+          <svg class="card-img w-full h-full" viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Dubai skyline and desert dunes illustration"><defs><linearGradient id="gD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#312e81"/><stop offset=".55" stop-color="#f97316"/><stop offset="1" stop-color="#fbbf24"/></linearGradient></defs><rect width="400" height="224" fill="url(#gD)"/><g fill="#fef3c7"><circle cx="40" cy="30" r="1.5"/><circle cx="120" cy="50" r="1.5"/><circle cx="330" cy="28" r="1.5"/><circle cx="370" cy="64" r="1.5"/><circle cx="220" cy="22" r="1.5"/></g><circle cx="200" cy="150" r="42" fill="#fde68a" opacity=".85"/><g fill="#0f172a"><path d="M262 160 L267 40 L272 160Z"/><rect x="254" y="110" width="26" height="55"/><rect x="60" y="120" width="22" height="50"/><rect x="88" y="100" width="18" height="70"/><rect x="112" y="128" width="26" height="42"/><rect x="150" y="112" width="20" height="58"/><rect x="180" y="130" width="24" height="40"/><rect x="214" y="118" width="18" height="52"/><rect x="288" y="104" width="22" height="66"/><rect x="316" y="126" width="26" height="44"/><rect x="346" y="112" width="18" height="58"/></g><path d="M0 190 Q100 150 200 185 T400 170 V224 H0Z" fill="#b45309"/><path d="M0 212 Q120 180 250 205 T400 200 V224 H0Z" fill="#92400e"/></svg>
+          <span class="absolute top-3 left-3 bg-amber text-navy text-xs font-bold px-3 py-1.5 rounded-full"><i class="fa-regular fa-clock mr-1"></i>4N / 5D</span>
+          <span class="absolute top-3 right-3 bg-navy/80 text-white text-xs px-3 py-1.5 rounded-full">International</span>
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-serif text-xl font-bold text-navy">Dubai Family &amp; Desert Luxury Tour</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600 flex-1">
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Desert safari with dinner experience</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>City tour, Burj Khalifa &amp; shopping time</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Comfortable family-friendly hotels</li>
+          </ul>
+          <a href="#" data-wa-pkg="Dubai Family & Desert Luxury Tour (4N/5D)" class="wa-link mt-6 inline-flex items-center justify-center gap-2 bg-wa hover:bg-green-500 text-white font-semibold py-3 rounded-full transition"><i class="fa-brands fa-whatsapp text-lg"></i> Inquire on WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="pkg-card group card-lift bg-white rounded-2xl overflow-hidden shadow-md flex flex-col" data-cat="international">
+        <div class="relative h-56 overflow-hidden img-fallback">
+          <svg class="card-img w-full h-full" viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Bali temple gate and rice terraces illustration"><defs><linearGradient id="gB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fb7185"/><stop offset=".6" stop-color="#fdba74"/><stop offset="1" stop-color="#fef3c7"/></linearGradient></defs><rect width="400" height="224" fill="url(#gB)"/><circle cx="200" cy="100" r="40" fill="#fff7ed"/><path d="M0 140 Q100 90 200 130 T400 120 V160 H0Z" fill="#166534"/><path d="M0 160 Q200 145 400 160 V224H0Z" fill="#4ade80"/><path d="M0 178 Q200 163 400 178 V224H0Z" fill="#22c55e"/><path d="M0 196 Q200 181 400 196 V224H0Z" fill="#16a34a"/><path d="M0 212 Q200 200 400 212 V224H0Z" fill="#15803d"/><g fill="#44403c"><path d="M148 190 V122 H156 V108 H164 V96 H172 V84 H182 V190Z"/><path d="M252 190 V122 H244 V108 H236 V96 H228 V84 H218 V190Z"/><rect x="140" y="186" width="48" height="8"/><rect x="212" y="186" width="48" height="8"/></g><path d="M330 215 Q340 170 346 140" stroke="#78350f" stroke-width="5" fill="none" stroke-linecap="round"/><g stroke="#14532d" stroke-width="4" fill="none" stroke-linecap="round"><path d="M346 140 Q324 124 306 140"/><path d="M346 140 Q338 114 320 116"/><path d="M346 140 Q360 114 378 120"/><path d="M346 140 Q372 126 386 146"/></g></svg>
+          <span class="absolute top-3 left-3 bg-amber text-navy text-xs font-bold px-3 py-1.5 rounded-full"><i class="fa-regular fa-clock mr-1"></i>5N / 6D</span>
+          <span class="absolute top-3 right-3 bg-navy/80 text-white text-xs px-3 py-1.5 rounded-full">International</span>
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-serif text-xl font-bold text-navy">Bali Scenic Couple &amp; Family Retreat</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600 flex-1">
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Temples, rice terraces &amp; waterfalls</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Beach &amp; villa-style stays</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Perfect for couples and families</li>
+          </ul>
+          <a href="#" data-wa-pkg="Bali Scenic Couple & Family Retreat (5N/6D)" class="wa-link mt-6 inline-flex items-center justify-center gap-2 bg-wa hover:bg-green-500 text-white font-semibold py-3 rounded-full transition"><i class="fa-brands fa-whatsapp text-lg"></i> Inquire on WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="pkg-card group card-lift bg-white rounded-2xl overflow-hidden shadow-md flex flex-col" data-cat="group">
+        <div class="relative h-56 overflow-hidden img-fallback">
+          <svg class="card-img w-full h-full" viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Snow-capped Himachal mountains near Manali illustration"><defs><linearGradient id="gM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#e0f2fe"/></linearGradient></defs><rect width="400" height="224" fill="url(#gM)"/><path d="M0 150 L90 60 L150 110 L230 40 L320 120 L400 70 V175 H0Z" fill="#94a3b8"/><g fill="#fff"><path d="M90 60 L70 86 L90 78 L106 90Z"/><path d="M230 40 L204 76 L224 68 L240 82 L256 70Z"/><path d="M400 70 L372 98 L388 92 L400 100Z"/></g><path d="M0 178 Q100 134 200 172 T400 160 V224H0Z" fill="#e2e8f0"/><rect y="205" width="400" height="19" fill="#fff"/><g fill="#14532d"><path d="M40 196 l-15 32 h30z M40 172 l-13 28 h26z M40 152 l-10 22 h20z"/><path d="M82 202 l-12 26 h24z M82 182 l-10 22 h20z M82 166 l-8 18 h16z"/><path d="M335 198 l-15 32 h30z M335 174 l-13 28 h26z M335 154 l-10 22 h20z"/><path d="M372 204 l-12 24 h24z M372 186 l-10 20 h20z M372 170 l-8 18 h16z"/></g></svg>
+          <span class="absolute top-3 left-3 bg-amber text-navy text-xs font-bold px-3 py-1.5 rounded-full"><i class="fa-regular fa-clock mr-1"></i>4N / 5D</span>
+          <span class="absolute top-3 right-3 bg-navy/80 text-white text-xs px-3 py-1.5 rounded-full">Group Tour</span>
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-serif text-xl font-bold text-navy">Himachal &amp; Manali Group Excursion</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600 flex-1">
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Solang Valley &amp; Rohtang side sightseeing*</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Comfortable group transport from Delhi</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Ideal for friends, families &amp; society groups</li>
+          </ul>
+          <a href="#" data-wa-pkg="Himachal & Manali Group Excursion (4N/5D)" class="wa-link mt-6 inline-flex items-center justify-center gap-2 bg-wa hover:bg-green-500 text-white font-semibold py-3 rounded-full transition"><i class="fa-brands fa-whatsapp text-lg"></i> Inquire on WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="pkg-card group card-lift bg-white rounded-2xl overflow-hidden shadow-md flex flex-col" data-cat="international">
+        <div class="relative h-56 overflow-hidden img-fallback">
+          <svg class="card-img w-full h-full" viewBox="0 0 400 224" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Thailand longtail boat and limestone cliffs illustration"><defs><linearGradient id="gT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#fb923c"/></linearGradient><linearGradient id="gT2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14b8a6"/><stop offset="1" stop-color="#0f766e"/></linearGradient></defs><rect width="400" height="224" fill="url(#gT)"/><circle cx="300" cy="80" r="30" fill="#fff7ed" opacity=".95"/><g fill="#374151"><path d="M20 135 L40 70 Q55 50 75 70 L98 135Z"/><path d="M90 135 L116 86 Q130 70 150 90 L174 135Z"/><path d="M330 135 L350 96 Q362 84 376 98 L396 135Z"/></g><g fill="#15803d"><path d="M40 70 Q55 50 75 70 Q58 62 40 70Z"/><path d="M116 86 Q130 70 150 90 Q132 80 116 86Z"/></g><rect y="130" width="400" height="94" fill="url(#gT2)"/><path d="M20 150 q15 -6 30 0 t30 0 M300 158 q15 -6 30 0 t30 0 M60 205 q15 -6 30 0 t30 0 M250 208 q15 -6 30 0 t30 0" stroke="#ccfbf1" stroke-width="2" fill="none" opacity=".8"/><path d="M130 176 Q200 198 290 170 L280 188 Q200 204 142 192Z" fill="#7c2d12"/><path d="M175 174 L200 158 L235 170Z" fill="#fbbf24"/><path d="M290 170 L338 154" stroke="#44403c" stroke-width="3" stroke-linecap="round"/><circle cx="132" cy="178" r="4" fill="#ef4444"/><circle cx="138" cy="182" r="3" fill="#22c55e"/></svg>
+          <span class="absolute top-3 left-3 bg-amber text-navy text-xs font-bold px-3 py-1.5 rounded-full"><i class="fa-regular fa-clock mr-1"></i>4N / 5D</span>
+          <span class="absolute top-3 right-3 bg-navy/80 text-white text-xs px-3 py-1.5 rounded-full">International</span>
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-serif text-xl font-bold text-navy">Thailand Bangkok &amp; Pattaya Getaway</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600 flex-1">
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Bangkok city &amp; temple tour</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Pattaya island day trip</li>
+            <li><i class="fa-solid fa-circle-check text-amber mr-2"></i>Great value for families &amp; friends</li>
+          </ul>
+          <a href="#" data-wa-pkg="Thailand Bangkok & Pattaya Getaway (4N/5D)" class="wa-link mt-6 inline-flex items-center justify-center gap-2 bg-wa hover:bg-green-500 text-white font-semibold py-3 rounded-full transition"><i class="fa-brands fa-whatsapp text-lg"></i> Inquire on WhatsApp</a>
+        </div>
+      </article>
+    </div>
+    <p class="mt-8 text-center text-xs text-slate-500">*Inclusions vary by season and local permits. Final itinerary and pricing shared on inquiry.</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-16 sm:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <span class="text-amber font-semibold tracking-widest text-xs uppercase">Our Services</span>
+      <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-bold text-navy">Everything Your Journey Needs, Under One Roof</h2>
+    </div>
+    <div class="mt-12 grid md:grid-cols-3 gap-6 lg:gap-8">
+      <div class="reveal card-lift bg-slate-50 border border-slate-100 rounded-2xl p-8">
+        <div class="w-14 h-14 rounded-2xl bg-navy text-amber text-2xl flex items-center justify-center"><i class="fa-solid fa-suitcase-rolling"></i></div>
+        <h3 class="mt-6 font-serif text-xl font-bold text-navy">Customized Holiday Packages</h3>
+        <p class="mt-3 text-slate-600 text-sm leading-relaxed">Domestic and international holidays designed around your interests, budget and travel dates. No cookie-cutter itineraries.</p>
+      </div>
+      <div class="reveal card-lift bg-slate-50 border border-slate-100 rounded-2xl p-8">
+        <div class="w-14 h-14 rounded-2xl bg-navy text-amber text-2xl flex items-center justify-center"><i class="fa-solid fa-people-roof"></i></div>
+        <h3 class="mt-6 font-serif text-xl font-bold text-navy">Group Tours &amp; Family Excursions</h3>
+        <p class="mt-3 text-slate-600 text-sm leading-relaxed">Whether it's a family reunion, friends' trip or a society group, we manage transport, stays and schedules so everyone travels in comfort.</p>
+      </div>
+      <div class="reveal card-lift bg-slate-50 border border-slate-100 rounded-2xl p-8">
+        <div class="w-14 h-14 rounded-2xl bg-navy text-amber text-2xl flex items-center justify-center"><i class="fa-solid fa-plane-departure"></i></div>
+        <h3 class="mt-6 font-serif text-xl font-bold text-navy">Air Ticketing &amp; Hassle-Free Travel</h3>
+        <p class="mt-3 text-slate-600 text-sm leading-relaxed">Domestic and international air tickets plus complete travel coordination, from bookings and changes to on-ground support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="py-16 sm:py-24 bg-navy relative overflow-hidden">
+  <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-amber/10 blur-3xl"></div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-6 relative grid lg:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <span class="text-amber font-semibold tracking-widest text-xs uppercase">Why Travel With Us</span>
+      <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-bold text-white leading-tight">A Neighbourhood Agency You Can Actually Talk To</h2>
+      <p class="mt-5 text-slate-300 leading-relaxed">Since 2010 we've been planning trips for families from Ashok Vihar, Wazirpur and across Delhi. You deal with real people who know your plans, not a call centre.</p>
+      <a href="#contact" class="mt-8 inline-flex items-center gap-2 bg-amber hover:bg-amber-dark text-navy font-semibold px-7 py-3.5 rounded-full transition hover:scale-105">Get a Free Itinerary <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div class="reveal bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition">
+        <i class="fa-solid fa-location-dot text-amber text-2xl"></i>
+        <h3 class="mt-4 text-white font-semibold">15+ Years in Ashok Vihar / Wazirpur</h3>
+        <p class="mt-2 text-slate-300 text-sm">A trusted local office you can visit, with a track record built on repeat customers and referrals.</p>
+      </div>
+      <div class="reveal bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition">
+        <i class="fa-solid fa-list-check text-amber text-2xl"></i>
+        <h3 class="mt-4 text-white font-semibold">Detailed, Personal Itineraries</h3>
+        <p class="mt-2 text-slate-300 text-sm">Day-by-day plans written for your group, with clear inclusions so there are no surprises.</p>
+      </div>
+      <div class="reveal bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition">
+        <i class="fa-solid fa-handshake-angle text-amber text-2xl"></i>
+        <h3 class="mt-4 text-white font-semibold">Helpful, Honest Guidance</h3>
+        <p class="mt-2 text-slate-300 text-sm">We suggest the right season, stay and pace for your family, even if it means a simpler plan.</p>
+      </div>
+      <div class="reveal bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition">
+        <i class="fa-solid fa-headset text-amber text-2xl"></i>
+        <h3 class="mt-4 text-white font-semibold">Smooth On-Trip Coordination</h3>
+        <p class="mt-2 text-slate-300 text-sm">We stay reachable on WhatsApp during your trip to handle transfers, changes and questions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="py-16 sm:py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-5 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <span class="text-amber font-semibold tracking-widest text-xs uppercase">Customer Reviews</span>
+      <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-bold text-navy">Travellers Who Came Back Happy</h2>
+    </div>
+    <div class="mt-12 grid md:grid-cols-3 gap-6 lg:gap-8">
+      <figure class="reveal card-lift bg-white rounded-2xl p-7 shadow-md">
+        <div class="text-amber text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote class="mt-4 text-slate-700 text-sm leading-relaxed">"We took our kids and parents to Jim Corbett for a long weekend. The resort, the safari timing, everything was planned so well that nobody was tired or rushed. Will book again."</blockquote>
+        <figcaption class="mt-6 flex items-center gap-3">
+          <span class="w-11 h-11 rounded-full bg-navy text-amber font-semibold flex items-center justify-center">RS</span>
+          <span><span class="block font-semibold text-navy text-sm">Rohit &amp; Seema Sharma</span><span class="block text-xs text-slate-500">Ashok Vihar · Jim Corbett Trip</span></span>
+        </figcaption>
+      </figure>
+      <figure class="reveal card-lift bg-white rounded-2xl p-7 shadow-md">
+        <div class="text-amber text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <blockquote class="mt-4 text-slate-700 text-sm leading-relaxed">"It was our first international trip and we were nervous. They explained visa steps, planned our Sri Lanka itinerary day by day and adjusted it when we asked. Very patient and helpful."</blockquote>
+        <figcaption class="mt-6 flex items-center gap-3">
+          <span class="w-11 h-11 rounded-full bg-navy text-amber font-semibold flex items-center justify-center">AK</span>
+          <span><span class="block font-semibold text-navy text-sm">Anita &amp; Vikram Khanna</span><span class="block text-xs text-slate-500">Wazirpur · Sri Lanka Trip</span></span>
+        </figcaption>
+      </figure>
+      <figure class="reveal card-lift bg-white rounded-2xl p-7 shadow-md">
+        <div class="text-amber text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <blockquote class="mt-4 text-slate-700 text-sm leading-relaxed">"We were a group of 18 from our colony. Tickets, hotels, cabs, everything was coordinated and they were on WhatsApp throughout the trip. Zero confusion, which is rare for a big group."</blockquote>
+        <figcaption class="mt-6 flex items-center gap-3">
+          <span class="w-11 h-11 rounded-full bg-navy text-amber font-semibold flex items-center justify-center">MG</span>
+          <span><span class="block font-semibold text-navy text-sm">Manoj Gupta &amp; Group</span><span class="block text-xs text-slate-500">Pitampura · Group Excursion</span></span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- INQUIRY FORM -->
+<section id="contact" class="py-16 sm:py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-5 sm:px-6">
+    <div class="grid lg:grid-cols-5 rounded-3xl overflow-hidden shadow-2xl">
+      <div class="lg:col-span-2 bg-navy p-8 sm:p-10 text-white relative">
+        <div class="absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-amber/10 blur-2xl"></div>
+        <span class="text-amber font-semibold tracking-widest text-xs uppercase">Plan Your Trip</span>
+        <h2 class="mt-3 font-serif text-3xl font-bold leading-tight">Tell Us Where You Want To Go</h2>
+        <p class="mt-4 text-slate-300 text-sm leading-relaxed">Fill in a few details and we'll continue the conversation on WhatsApp with a custom plan and quote.</p>
+        <ul class="mt-8 space-y-4 text-sm text-slate-200 relative">
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot text-amber mt-1"></i><span>Ashok Vihar / Wazirpur,<br>New Delhi, India</span></li>
+          <li class="flex gap-3"><i class="fa-brands fa-whatsapp text-amber mt-1 text-lg"></i><span>Quick replies on WhatsApp</span></li>
+          <li class="flex gap-3"><i class="fa-regular fa-clock text-amber mt-1"></i><span>Serving travellers since 2010</span></li>
+        </ul>
+      </div>
+      <form id="tripForm" class="lg:col-span-3 bg-slate-50 p-8 sm:p-10 grid sm:grid-cols-2 gap-5" novalidate>
+        <div class="sm:col-span-2">
+          <label for="fName" class="block text-sm font-medium text-navy mb-1.5">Your Name</label>
+          <input id="fName" type="text" required placeholder="e.g. Rahul Verma" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-amber focus:border-amber">
+        </div>
+        <div class="sm:col-span-2">
+          <label for="fDest" class="block text-sm font-medium text-navy mb-1.5">Destination</label>
+          <input id="fDest" type="text" required placeholder="e.g. Bali, Dubai, Manali" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-amber focus:border-amber">
+        </div>
+        <div>
+          <label for="fMonth" class="block text-sm font-medium text-navy mb-1.5">Travel Month</label>
+          <select id="fMonth" required class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-amber focus:border-amber">
+            <option value="">Select month</option>
+          </select>
+        </div>
+        <div>
+          <label for="fPax" class="block text-sm font-medium text-navy mb-1.5">Number of Travelers</label>
+          <input id="fPax" type="number" min="1" max="100" required placeholder="e.g. 4" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-amber focus:border-amber">
+        </div>
+        <p id="formErr" class="sm:col-span-2 text-sm text-red-600 hidden" role="alert">Please fill in all the fields.</p>
+        <button type="submit" class="sm:col-span-2 inline-flex items-center justify-center gap-2 bg-wa hover:bg-green-500 text-white font-semibold py-4 rounded-full transition hover:scale-[1.02] shadow-lg">
+          <i class="fa-brands fa-whatsapp text-xl"></i> Send Inquiry on WhatsApp
+        </button>
+        <p class="sm:col-span-2 text-xs text-slate-500 text-center">This opens WhatsApp with your details pre-filled. Nothing is stored on this website.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-navy text-slate-300 pt-14 pb-8">
+  <div class="max-w-7xl mx-auto px-5 sm:px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div class="lg:col-span-2">
+      <div class="flex items-center gap-2.5">
+        <span class="w-10 h-10 rounded-full bg-amber flex items-center justify-center text-navy text-xl"><i class="fa-solid fa-infinity"></i></span>
+        <span class="text-white font-serif font-bold text-xl">Infinity Tour n Travel</span>
+      </div>
+      <p class="mt-4 text-sm leading-relaxed max-w-md">Crafting Smooth Journeys Since 2010. Customized domestic and international holidays, group tours, family excursions and air ticketing from the heart of North-West Delhi.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#home" class="hover:text-amber transition">Home</a></li>
+        <li><a href="#packages" class="hover:text-amber transition">Packages</a></li>
+        <li><a href="#services" class="hover:text-amber transition">Services</a></li>
+        <li><a href="#why" class="hover:text-amber transition">Why Us</a></li>
+        <li><a href="#reviews" class="hover:text-amber transition">Reviews</a></li>
+        <li><a href="#contact" class="hover:text-amber transition">Plan a Trip</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-4">Visit &amp; Connect</h4>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-3"><i class="fa-solid fa-location-dot text-amber mt-1"></i><span>Ashok Vihar / Wazirpur,<br>New Delhi, India</span></li>
+        <li><a href="#" data-wa="Hello Infinity Tour n Travel!" class="wa-link inline-flex items-center gap-2 text-wa hover:text-green-400 transition"><i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-6 mt-10 pt-6 border-t border-white/10 text-xs text-slate-400 flex flex-col sm:flex-row justify-between gap-2">
+    <p>&copy; <span id="year">2026</span> Infinity Tour n Travel. All rights reserved.</p>
+    <p>Established 2010 · New Delhi, India</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="#" data-wa="Hello Infinity Tour n Travel! I would like to plan a trip." class="wa-link pulse-ring fixed bottom-5 right-5 z-50 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-wa text-white flex items-center justify-center text-3xl sm:text-4xl shadow-xl hover:scale-110 transition" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+  // ====== EDIT THIS ONE LINE to change the WhatsApp number (country code + number, no + or spaces) ======
+  const WHATSAPP_NUMBER = "919120997588";
+  // =========================================================================================================
+
+  const waURL = (msg) => "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg);
+
+  // WhatsApp links
+  document.querySelectorAll(".wa-link").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      let msg = el.dataset.wa;
+      if (el.dataset.waPkg) {
+        msg = "Hello Infinity Tour n Travel! I am interested in the *" + el.dataset.waPkg + "* package. Please share the itinerary, inclusions and price details.";
+      }
+      window.open(waURL(msg || "Hello Infinity Tour n Travel!"), "_blank", "noopener");
+    });
+  });
+
+  // Mobile menu
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  menuBtn.addEventListener("click", () => {
+    const open = mobileMenu.classList.toggle("hidden") === false;
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+  });
+  document.querySelectorAll(".mlink").forEach((a) => a.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  }));
+
+  // Package filter
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".pkg-card");
+  filterBtns.forEach((btn) => btn.addEventListener("click", () => {
+    filterBtns.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    const f = btn.dataset.filter;
+    cards.forEach((c) => {
+      const show = f === "all" || c.dataset.cat === f;
+      c.classList.toggle("hide", !show);
+      if (show) { c.classList.remove("fade-in"); void c.offsetWidth; c.classList.add("fade-in"); }
+    });
+  }));
+
+  // Image fallback (keeps layout pretty if any photo fails to load)
+  document.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("error", () => { img.style.display = "none"; }, { once: true });
+  });
+
+  // Month options (next 12 months)
+  const monthSel = document.getElementById("fMonth");
+  const names = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const now = new Date();
+  for (let i = 0; i < 12; i++) {
+    const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+    const label = names[d.getMonth()] + " " + d.getFullYear();
+    const opt = document.createElement("option");
+    opt.value = label; opt.textContent = label;
+    monthSel.appendChild(opt);
+  }
+
+  // Inquiry form -> WhatsApp
+  document.getElementById("tripForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("fName").value.trim();
+    const dest = document.getElementById("fDest").value.trim();
+    const month = monthSel.value;
+    const pax = document.getElementById("fPax").value.trim();
+    const err = document.getElementById("formErr");
+    if (!name || !dest || !month || !pax) { err.classList.remove("hidden"); return; }
+    err.classList.add("hidden");
+    const msg = "Hello Infinity Tour n Travel! I would like a custom trip quote.\n\n" +
+      "*Name:* " + name + "\n" +
+      "*Destination:* " + dest + "\n" +
+      "*Travel Month:* " + month + "\n" +
+      "*No. of Travelers:* " + pax + "\n\n" +
+      "Please share itinerary and pricing. Thank you!";
+    window.open(waURL(msg), "_blank", "noopener");
+  });
+
+  // Scroll reveal
+  const io = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
+    entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("show"); io.unobserve(en.target); } });
+  }, { threshold: 0.12 }) : null;
+  document.querySelectorAll(".reveal").forEach((el) => io ? io.observe(el) : el.classList.add("show"));
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
